@@ -19,7 +19,7 @@ public class SignupStepDefinitation {
 	@Given("^user is already on UPS Home page$")
 	//you have to include throws Throwable in every methods
 	public void user_is_already_on_UPS_Home_page() throws Throwable{
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/luxicate/git/UPSrepo1/SignUpUPSFramework/chromedriver");
 		//you forgot to initialize driver for chromedriver
 		this.driver=new ChromeDriver();
 		driver.get("https://www.ups.com/us/en/Home.page?");
