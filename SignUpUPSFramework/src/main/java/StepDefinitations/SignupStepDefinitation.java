@@ -23,15 +23,15 @@ public class SignupStepDefinitation {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
-	@When("^title of sign up page is UPS Signup$")
-	public void title_of_sign_up_page_is_UPS() throws Throwable{
+	@When("^title of sign up page is UPS$")
+	public void title_of_sign_up_page_is_UPS() throws Throwable {
 		String title = driver.getTitle();
 		System.out.println(title);
 		Assert.assertEquals("Home: UPS", title);
 	}
 
-	@Then("^user clicks on sign up button from home page$")
-	public void user_clicks_on_sign_up_button() throws Throwable{
+	@Then("^user clicks on sign up button$")
+	public void user_clicks_on_sign_up_button() throws Throwable {
 		WebElement signUp = driver.findElement(By.xpath("//*[@id=\"ups-navItems\"]/ul[2]/li[2]/a"));
 		signUp.click();
 
